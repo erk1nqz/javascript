@@ -1,0 +1,418 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+hr {
+    margin: 1rem 0;
+    color: inherit;
+    border: 0;
+    border-top: 1px solid;
+    opacity: .25;
+}
+
+.featurette-divider {
+    margin: 5rem 0;
+}
+
+.featurette {
+    align-items: center;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+@media (max-width: 1190px) {
+    .featurette-img {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media (max-width: 945px) {
+    .featurette-img {
+        width: 350px;
+        height: 350px;
+    }
+}
+
+.banner-image {
+    background-image: url("assets/img/main.jpg");
+    background-size: cover;
+}
+
+.banner-card {
+    border-radius: 40px;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+    padding-top: 30px;
+    background-image: url(assets/img/main.jpg);
+    background-size: cover;
+}
+
+.nav {
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+#nav__link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 30px;
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.2s linear;
+}
+
+#nav__link:hover {
+    color: #26a65b;
+}
+
+.banner-image {
+    background-image: url("assets/img/main.jpg");
+    background-size: cover;
+}
+
+.header__logo {
+    font-size: 35px;
+    color: #26a65b
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__intro {
+    margin: 0 auto;
+    margin-top: 200px;
+    color: #fff;
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intro__title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 50px;
+}
+
+.intro__subtitle {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 30px;
+    margin-left: 180px;
+}
+
+.intro__text {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    letter-spacing: 6px;
+    font-size: 25px;
+}
+
+.header__btn {
+    margin-left: 650px;
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+    width: 200px;
+    text-decoration: none;
+    background-color: #26a65b;
+    padding: 10px 50px;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 18px;
+    transition: all 0.3s linear;
+}
+
+.header__btn:hover {
+    background-color: rgb(5, 71, 5);
+}
+
+.quote {
+    width: 600px;
+    margin: 0;
+    background: #eeeeee54;
+    padding: 1em;
+    border-radius: 1em;
+}
+
+.quote figcaption,
+.quote blockquote {
+    margin: 0.7em;
+}
+
+.service {
+    margin: 40px auto   ;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.services__block {
+    flex-grow: 1;
+    flex-basis: 300px;
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    margin-top: 10px;
+}
+
+.block__name {
+    margin-left: 60px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #26a65b;
+}
+
+.block__text {
+    margin-left: 60px;
+    width: 250px;
+    text-transform: lowercase;
+}
+
+.discount {
+    width: 100%;
+    background-color: #26a65b;
+}
+
+.discount__inner {
+    color: #fff;
+}
+
+.discount__title {
+    display: block;
+    font-size: 30px;
+    font-weight: 400;
+    margin-left: 200px;
+    margin-bottom: 15px;
+}
+
+.discount__subtitle {
+    display: block;
+    font-weight: 400;
+    margin-left: 100px;
+    margin-bottom: 20px;
+}
+
+em {
+    color: #ffffff;
+}
+
+.discount__form {
+    margin-left: 270px;
+}
+
+#discount__input {
+    width: 300px;
+    height: 30px;
+    border-radius: 20px;
+}
+
+#discount__input::placeholder {
+    margin-left: 20px;
+}
+
+#discount__btn {
+    margin-left: 30px;
+    color: #26a65b;
+    background-color: #fff;
+    padding: 5px 100px 5px 100px;
+    border-radius: 20px;
+    border: 2px solid #fff;
+}
+
+.header__about {
+    color: #fff;
+    margin-top: 50px;
+}
+
+.about {
+    margin-top: 50px;
+}
+
+.about__block {
+    width: 1050px;
+    margin: 0 auto;
+}
+
+.ablock__left {
+    width: 500px;
+}
+
+.ablock__right {
+    width: 500px;
+}
+
+.about__title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 40px;
+    margin-left: 400px;
+    margin-bottom: 50px;
+}
+
+.about__text {
+    font-size: 18px;
+}
+
+.about__img {
+    width: 500px;
+}
+
+.about__block {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    align-items: center;
+}
+
+#stores {
+    margin-left: 50px;
+    border-collapse: collapse;
+    border-radius: 50%;
+}
+
+#stores td, #stores th {
+    border-radius: 10px;
+    padding: 8px;
+    width: 150px;
+}
+
+#stores tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#stores tr:hover {
+    background-color: #ddd;
+}
+
+#stores th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #26a65b;
+    color: #fff;
+}
+
+.feedback {
+    margin: 0 auto;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+.feedback__block {
+    display: flex;
+    justify-content: space-around;
+}
+
+.feedback__title {  
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 40px;
+    margin-left: 400px;
+    margin-bottom: 50px;
+}
+
+.fb {
+    width: 350px;
+}
+
+.fb:first-child {
+    margin-left: 50px;
+}
+
+.feedback__up {
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.feedback__img {
+    width: 150px;
+}
+
+.feedback__name {
+    font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.prefooter {
+    margin: 0 auto;
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 250px;
+    background-color: #26a65b;
+}
+
+.footer__inner {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.footer__title {
+    font-size: 30px;
+    margin-top: 110px;
+
+}
+
+.footer__center {
+    margin-top: 60px;
+}
+
+.footer__right {
+    margin-top: 30px;
+}
+
+.footer__links {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 8px;
+    font-weight: 400;
+}
