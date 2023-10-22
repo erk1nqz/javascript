@@ -416,3 +416,37 @@ em {
     margin-bottom: 8px;
     font-weight: 400;
 }
+
+
+/*  ORDER  */
+.order {
+    height: 800px;
+}
+.order-title {
+    margin-bottom: 30px;
+}
+.choose {
+    margin: 0 auto;
+    width: 700px;
+    padding: 20px;
+    border: 2px solid #000;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.choose-left {
+    width: 300px;
+}
+
+.choose-right {
+    width: clamp(200px, 15%, 350px);
+}
+
+.option {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 10px;
+}
