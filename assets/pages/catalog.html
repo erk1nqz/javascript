@@ -142,8 +142,14 @@
     <section class="order">
       <div class="container">
         <h2 class="text-center order-title">Выберите свой вариант</h2>
+        <p class="text-center">В течении скольки минут вы хотите сделать заказ?</p>
+        <div class="timer-form text-center">
+          <input type="number" name="timer" id="timer-input">
+          <button class="btn btn-primary" onclick="startCountdown()">Start Countdown</button>
+        </div>
+        <div class="timer-countdown text-center" style="margin: 10px 0 20px 0; font-size: 20px;">Таймер: <span id="countdown"></span></div>
         <div class="choose">
-          <div class="choose-left">
+          <div class="choose-item">
             <div class="option">
               <p class="option-text">Роза</p>
               <div class="btns">
@@ -152,7 +158,7 @@
               </div>
             </div>
             <div class="option">
-              <p class="option-text">Пиона</p>
+              <p class="option-text">Пион</p>
               <div class="btns">
                 <button name="order_type" class="btn btn-primary" data-action="flower-plus">+</button>
                 <button name="order_type" class="btn btn-primary" data-action="flower-minus">-</button>
@@ -187,20 +193,16 @@
               </div>
             </div>
           </div>
-          <div class="choose-right">
+          <div class="choose-item">
             <p class="choose-right-title text-center">Ваш заказ:</p>
             <div class="cart">
 
             </div>
-            <a href="https://api.whatsapp.com/send?phone=77762090592&text=Здравствуйте!%20Хочу%20заказать%20у%20вас%20букет%20с%20таким%20содержимым:" class="btn btn-success order-now">Заказать сейчас</a>
+            <a href="https://api.whatsapp.com/send?phone=77762090592&text=Здравствуйте!%20Хочу%20заказать%20у%20вас%20букет%20с%20таким%20содержимым:" target="_blank" class="btn btn-success order-now">Заказать сейчас</a>
           </div>
         </div>
       </div>
     </section>
-
-
-
-
     <br>
     <br>
     <br>
@@ -230,5 +232,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="../../script.js"></script>
+    <script src="../../timer.js"></script>
 </body>
 </html>

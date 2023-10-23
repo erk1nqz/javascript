@@ -76,15 +76,11 @@
             <p class="col-lg-10 fs-4"><em>Получайте интересные идеи для подарков к каждому празднику и полезные советы по уходу за советами!</em></p>
           </div>
           <div class="col-md-10 mx-auto col-lg-5">
-            <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
+            <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary" onsubmit="return validateForm();">
               <div class="form-floating mb-3">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <input type="text" class="form-control" id="email" name="email" placeholder="name@example.com" required> 
+                <div id="emailError" class="error"></div> 
                 <label for="floatingInput">Почта</label>
-              </div>
-              <div class="checkbox mb-3">
-                <label>
-                  <input type="checkbox" value="remember-me"> Remember me
-                </label>
               </div>
               <button class="w-100 btn btn-lg btn-primary" type="submit">Подписаться</button>
               <hr class="my-4">
