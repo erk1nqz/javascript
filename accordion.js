@@ -23,3 +23,21 @@ for (let i = 0; i < acc.length; i++) {
         }
     });
 }
+
+
+// Function to show an alert
+function showAlert() {
+  alert('Вы успешно подписались на систему');
+}
+
+// Function to show a notification
+function showNotification(title, message) {
+  const notification = document.getElementById('notification');
+  notification.innerHTML = `<strong>${title}</strong>: ${message}`;
+  notification.style.display = 'block';
+
+  // Automatically hide the notification after a few seconds (e.g., 5 seconds)
+  setTimeout(() => {
+      notification.style.display = 'none';
+  }, 5000);
+}
