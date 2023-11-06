@@ -104,3 +104,32 @@ function isValidEmail(email) {
     const emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
     return emailRegex.test(email);
 }
+
+
+const youtubeLink = document.getElementById('youtubeLink');
+const youtubeInfo = document.querySelector('#hover');
+
+youtubeLink.addEventListener('mouseover', () => {
+    youtubeInfo.style.opacity = 1;
+});
+
+youtubeLink.addEventListener('mouseout', () => {
+    youtubeInfo.style.opacity = 0;
+});
+
+function myMove() {
+    let id = null;
+    const elem = document.getElementById("animate");
+    let pos = 0;
+    clearInterval(id);
+    id = setInterval(frame, 5);
+    function frame() {
+      if (pos == 350) {
+        clearInterval(id);
+      } else {
+        pos++; 
+        elem.style.top = pos + 'px'; 
+        elem.style.left = pos + 'px'; 
+      }
+    }
+  }

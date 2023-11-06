@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Radio Button Quiz</title>
+</head>
+<body>
+    <span class="flower-tooltip" data-tooltip="This flower symbolizes love and affection.">Rose</span>
+
+    <div class="tooltip-popup" id="flower-tooltip">
+      <p>Flower Description: This flower symbolizes love and affection.</p>
+    </div>
+    
+    <script>
+      const flowerTooltip = document.querySelector('.flower-tooltip');
+      const tooltipPopup = document.getElementById('flower-tooltip');
+    
+      flowerTooltip.addEventListener('mouseover', () => {
+        tooltipPopup.style.display = 'block';
+      });
+    
+      flowerTooltip.addEventListener('mouseout', () => {
+        tooltipPopup.style.display = 'none';
+      });
+    </script>
+</body>
+</html>
