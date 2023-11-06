@@ -572,12 +572,12 @@ em {
 
 h1 span {
     opacity: 0;
-    transition: all 0.4s ease;
+    transition: all 1s ease;
   }
   
 h1 span.fade {
     opacity: 1;
-  }
+}
 
   @keyframes text {
     0%, 15%, 30%, 60%, 65%, 70%, 90%{
